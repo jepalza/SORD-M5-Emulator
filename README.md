@@ -7,7 +7,7 @@ No llegué a terminarlo, dado que por aquella época empezaba a despuntar el arc
 Lo dejo como algo histórico/anecdótico, dado su poco uso hoy día. Está TODO tal cual lo dejé en 2000 (quizás alguna actualización en 2015 que hice por diversión).
 
 ![Imagen sord1](https://github.com/jepalza/SORD-M5-Emulator/blob/main/FOTOS/SORDM52.JPG)
-![Imagen sord2](https://github.com/jepalza/SORD-M5-Emulator/blob/main/FOTOSSORDINT2.JPG)
+![Imagen sord2](https://github.com/jepalza/SORD-M5-Emulator/blob/main/FOTOS/SORDINT2.JPG)
 
 Nota: las fotos son mias, originales, del Sord M5 original que empleé en su día, pero que ya no conservo.
 
