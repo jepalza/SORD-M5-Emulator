@@ -1,0 +1,99 @@
+Emulador de SORD-M5 con el cartucho de BASIC-I          Joseba Epalza  12-SEP-00
+================================================================================
+
+
+
+         SEGUNDA VERSION: V1.1 Ahora con soporte de sonido preliminar
+            1-oct-00      ­Al menos ahora, suenan las teclas!
+                          Prueba a enviar bytes al puerto &20
+
+                          Sigo trabajando en el teclado, que se me resiste.
+                          He incluido un JPG con una foto del SORD-M5,
+                          para que te sirva de guia con las teclas por ahora.
+
+
+
+ Este emulador, en su primera fase (versi¢n 1.0), pretende cubrir la laguna que
+ hab¡a hasta ahora sobre el SORD-M5, un antiguo ordenador tipo ZX-81 (en cuanto
+ a memoria) y a medio camino entre SPECTRUM y MSX (del MSX hereda el mismo CHIP
+ de gesti¢n de gr ficos y sprites). Ten¡a un teclado de membrana plana con
+ teclas de goma ultraplanas de tacto muy c¢modo y con varias funciones por tecla
+ al igual que los SINCLAIR, pero sin tanto lio de combinaciones. S¢lo dispone
+ de 4k de RAM (ampliables a 32k externamente) y otros 4k extras con el cartucho
+ de BASIC-G. La particularidad es que no lleva el BASIC integrado en el interior
+ sino por medio de un cartucho externo que debe insertarse en la ranura superior
+ que a tal efecto tiene. Un tanto inc¢modo y antiest‚tico, la verdad.
+
+ El emulador, por ahora, emula muy poco, pero suficiente:
+
+    - El BASIC-I (incluido en un fichero llamado SORDBASI.ROM) completo.
+    - La ROM interna (incluida en un fichero llamado SORDINT.ROM).
+    - El teclado un tanto incompleto y enrevesado, ya que la equivalencia con
+      el teclado castellano, deja mucho que desear.
+    - La ranura externa de cartuchos: se puede insertar cualquiera (en teor¡a)
+    - El sistema de gr ficos completo (incluidos sprites y colores)
+
+ Y a£n le falta por emular lo siguiente:
+
+    - Una salida-entrada con el mundo exterior (impresora-joystick)
+    - Comandos SAVE y LOAD tanto reales como virtuales (al exterior o al PC)
+    - Perfeccionar el teclado acorde al mundo Ingl‚s o al Espa¤ol.
+    - Sonidos.
+    - ¨ Velocidad Real ?
+
+ Por ahora s¢lo dispongo en casa del pr¢pio SORD-M5 recien adquirido en el
+ mercadillo de BILBAO, con un s¢lo cartucho de ROM (el del BASIC-I).
+ Para DUMPEAR el cartucho y la ROM interna del M5 necesit‚ un programa BASIC
+ sencillo y un circuito electr¢nico de uni¢n entre el puerto paralelo del PC y
+ el de impresora del M5, y mucha paciencia y sincronizaci¢n.
+
+ Al no disponer de NING£N cartucho m s ni de programas en cinta (juegos o
+ aplicaciones) no puedo comprobar su funcionamiento al 100%.
+
+ Si dispones de mas cartchos (BASIC-G o BASIC-C) o juegos en cinta y eres capaz
+ de pasarlos al PC por cualquier medio, env¡amelos por favor, para que as¡ pueda
+ mejorar el emulador.
+
+ No aseguro una futura versi¢n del emulador, a no ser que haya un inter‚s muy
+ grande por ‚l, ya que no dispono de tiempo efectivo: mi trabajo de CAD/CAM me
+ ocupa la mayor parte del d¡a, y el resto es para mis tres hijos (y mi mujer).
+
+ ****************************************************************************
+
+ El uso del emulador es el siguiente:
+
+  * Con la tecla F1 obtenemos una ayuda general.
+
+  * Con la tecla F2 insertamos un cartucho (fichero) en la ranura exterior.
+        (por defecto se autoinserta el BASIC-I, fichero SORDBASI.ROM)
+
+  * La tecla F3 es para guardar la RAM entre las direcciones 0x7000 y 0x8000
+        que son los 4k de RAM internas y ademas 256 bytes de registros Z80.
+
+  * Con F4 recuperamos el DUMPEADO de RAM desde el fichero DUMP.RAM
+
+  * Con F5 sacamos pantallazo en formato PCX.
+
+  * La tecla CTRL del M5 es tambien la tecla CONTROL del PC
+
+  * Igual con las teclas SHIFT: son id‚nticas.
+
+  * La tecla ALT es equivalente al FN del M5.
+
+  * Las teclas no alfab‚ticas o num‚ricas no est n muy logradas y no coinciden
+    en todos los casos. Es mejor probar y apuntar, hasta que tenga tiempo de
+    corregirlo.
+
+  * Las teclas especiales (combinaciones) del M5 tambien se pueden hacer en el
+    emulador: prueba las combinaciones CTRL+Q, ¢ CTRL+R, ¢ CTRL+T, para acceder
+    a modos de pantalla alternativos (gr ficos, texto, 40 columnas, etc)
+
+
+
+
+                                 Por ahora, y en espera de noticias o cr¡ticas
+                                 se despide desde Sopelana (Vizcaya-Espa¤a):
+
+
+                                               Joseba Epalza Ramos.
+                                               <jepalza@teleline.es>

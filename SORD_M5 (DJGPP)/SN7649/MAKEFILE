@@ -1,0 +1,6 @@
+CC      = gcc
+
+CFLAGS = -funroll-loops -fomit-frame-pointer -O3 -m486
+
+sbpro.o:	sbpro.c
+	 gcc $(CFLAGS) -c sbpro.c

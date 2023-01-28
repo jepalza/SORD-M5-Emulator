@@ -1,0 +1,3 @@
+10 REM abcdefghijklmnopqrstuvwxyz
+20 REM ABCDEFGHIJKLMNOPQRSTUVWXYZ
+SAVE "123"

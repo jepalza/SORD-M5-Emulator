@@ -1,0 +1,12 @@
+CC      = gcc
+
+CFLAGS = -funroll-loops -fomit-frame-pointer -O3 -m486
+
+all:tms9918.o drv9918.o
+
+tms9918.o:	tms9918.c
+	 gcc $(CFLAGS) -c tms9918.c
+
+drv9918.o:	drv9918.c
+	 gcc $(CFLAGS) -c drv9918.c
+

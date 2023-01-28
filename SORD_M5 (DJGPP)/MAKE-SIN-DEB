@@ -1,0 +1,10 @@
+CC      = gcc
+
+CFLAGS = -funroll-loops -fomit-frame-pointer -O3 -m486
+
+sord.exe:  sord.o sn7649/sbpro.o tms9918/tms9918.o tms9918/drv9918.o ../z80/z80.o
+	gcc -s -o sord.exe sord.o sn7649/sbpro.o tms9918/tms9918.o tms9918/drv9918.o ../z80/z80.o -lalleg
+
+sord.o:	sord.c
+	 gcc $(CFLAGS) -c sord.c
+

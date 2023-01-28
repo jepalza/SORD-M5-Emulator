@@ -1,0 +1,47 @@
+First at all: this system is very poor and bad, but it's worked!!
+
+Type basic program in SORD, and run QBASIC in PC with LEEPARAL.BAS
+Run PC first, and second run SORD basic program.
+
+The dumped is very slow...
+
+When the dumped is finished, you must have one file called ROMOUT.TXT
+with one number by line: The firsts ten or twelve lines generally aren't anything
+(you must see it comparing the first positions in memory of sord with file)
+
+The second thing: Run in PC the GENEROM.BAS, which is a generator of ROM BINARY
+by eliminate each ten (10=CR/LF) from original file.
+
+Only one of two lines is good (one byte), the other file is CR/LF.
+
+If doesn't understood me, ask me for any more. Is very difficult for me to think
+in english the words that must say.
+
+Only one more thing: in several times, one or two bytes that come from SORD, is
+faulty (is loss) and the final BINARY ROM DUMPED is not complain with real ROM.
+In this case, you must repair it by hand, or try it the dumped again from SORD.
+
+By.
+
+=============================================================================
+
+The circuit:
+
+ * One of those cables from old PC (486 the most) to GAME PORT (16 pins-15 wired)
+ * One 25 PINS standard female (or male? don't remember) for PC parallel port
+
+ Solder this pins:  (is very simple)
+
+    GAME CONNECTOR (SORD PRINTER)                   25 PIN PARALLEL PC
+
+             1 (red wired)                                 10
+             2 not connected
+             3 to 10                   data bits 0-7       2 to 9
+             11 not connected
+             12+13                                         12
+             14 N.C.
+             15                        gnd                 18
+             16 not exist
+
+Port settings in PC is better in BI-DIR mode, and PURE MS-DOS.
+Other settins not probed.

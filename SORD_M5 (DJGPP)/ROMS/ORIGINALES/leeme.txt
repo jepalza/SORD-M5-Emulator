@@ -1,0 +1,4 @@
+son las ROM originales MIAS, las que yo dumpee de mi SORD-M5
+por internet circulas copias, pero con nombres cambiados (SYSTEM y BASIC_I)
+
+las dejo solo por recuerdo, por que es mejor usar las de internet por cosas de la universalidad
